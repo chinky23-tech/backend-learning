@@ -10,5 +10,5 @@ print(city)
 price = 500 
 quantity = 3
 
-print(price * quantity)
-
+print (price * quantity)
+ 
