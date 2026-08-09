@@ -9,6 +9,21 @@ print(city)
 
 price = 500 
 quantity = 3
+discount = 10
 
-print (price * quantity)
- 
+
+total = price * quantity
+discount_amount = total * discount / 100
+final_price = total - discount_amount 
+
+print(total)
+print(discount_amount)
+print(final_price)
+
+price = "999"
+quantity = "2"
+
+print(int(price)*int(quantity))
+
+print(type(price))
+print(type(quantity))
