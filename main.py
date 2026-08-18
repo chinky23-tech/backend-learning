@@ -1,6 +1,6 @@
 
 
-products = ["laptop", "phone", "tablet", "keyboard"]
+products = ["camera", "phone", "tablet", "keyboard"]
 
 if product in products:
     print("product is available")
