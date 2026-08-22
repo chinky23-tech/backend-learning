@@ -1,12 +1,5 @@
-def show_products():
-  
-  products = ["laptop" , "phone" , "tablet", "keyboard"]
-
-  for product in products:
-
-
-
-   print(product)
-show_products()
- 
-    
+def show_products(products):
+    for product in products:
+        print(product)
+products_list = ["key" , "lock"]  
+show_products(products_list)      
