@@ -4,7 +4,7 @@
 
 #total = calculate_total(100 , 200 , 200)
 #print(total)
-
+"""
 product = {"laptop" : "50000", "keyboard" : "20000"}
 def show_products(product):
 
@@ -13,3 +13,4 @@ def show_products(product):
 
 show_products(product)
 
+"""
