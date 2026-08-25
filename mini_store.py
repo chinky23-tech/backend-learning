@@ -87,3 +87,14 @@ def check_discount(price):
 message = check_discount(price)
 print(message)
 
+#task 9 
+products = {"laptop" : "50000" , "phone" : "30000" , "tablet" : "20000" , "keyboard" : "2000"}
+product_name = "laptop"
+def check_product(products, product_name):
+    if product_name in products:
+     
+        return product_name, price in products.items()
+    else:
+        return "product is  not available"
+message = check_product(products, product_name )
+print(message)    
