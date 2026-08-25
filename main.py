@@ -2,7 +2,7 @@
 
 products = ["camera", "phone", "tablet", "keyboard"]
 
-if product in products:
+if products in products:
     print("product is available")
 else:
     print("product is not available")      
