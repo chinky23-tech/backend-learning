@@ -93,7 +93,7 @@ product_name = "laptop"
 def check_product(products, product_name):
     if product_name in products:
      
-        return product_name, price in products.items()
+        return "its price "  + " : " + products[product_name] 
     else:
         return "product is  not available"
 message = check_product(products, product_name )
