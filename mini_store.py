@@ -76,5 +76,14 @@ final_price = price - result
 print(result)
 print(final_price)
 
+#task 8 
+price = 1000
 
+def check_discount(price):
+    if price >= 1000:
+         return "10% discount available"
+    else:
+        return "no discount" 
+message = check_discount(price)
+print(message)
 
