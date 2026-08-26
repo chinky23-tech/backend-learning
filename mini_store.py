@@ -98,3 +98,27 @@ def check_product(products, product_name):
         return "product is  not available"
 message = check_product(products, product_name )
 print(message)    
+#task 10
+
+def buy_product(products, product_name):
+    if product_name in products:
+        return "You bought" + " " + (product_name) + ", " + " price " + products[product_name]  
+    else:
+        return "Product not avialabe"
+message = buy_product(products, product_name)
+print(message)    
+
+#task 11
+products = {"laptop": 50000, "keyboard": 2000, "phone": 30000}
+cart = ["laptop", "keyboard", "phone"]
+
+def calculate_cart_total(products, cart):
+    total = 0 
+    for product_name in cart:
+      
+        total += products[product_name]
+    return total 
+
+
+cart_total = calculate_cart_total(products, cart)
+print(cart_total) 
