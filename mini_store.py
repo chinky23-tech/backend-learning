@@ -122,3 +122,38 @@ def calculate_cart_total(products, cart):
 
 cart_total = calculate_cart_total(products, cart)
 print(cart_total) 
+
+#task12
+numbers = [10, 20, 20, 40]
+
+def calculate_sum(numbers):
+    total = 0
+    for  number in numbers:
+
+     total += calculate_sum(number)
+    return(total)
+    print(numbers)
+
+    #task13
+products = {"laptop" : 50000 , "phone" : 30000 , "tablet" : 20000 , "keyboard" : 2000}
+
+    
+def add_products(products):
+
+  list = []
+   
+for product_name, price in products.items():
+   
+    if price >= 10000:
+       
+      list.append(product_name)
+
+     
+
+
+result = list(products)
+print(result)
+
+    
+
+
