@@ -178,6 +178,9 @@ print(result)
 """
      
     #task 16
+
+
+"""
 products = {"top": 1000, "jeans": 2000, "dress": 3000} 
 
 def check_product():
@@ -188,8 +191,21 @@ def check_product():
      return "not available"   
 result = check_product()
 print(result)
+"""
     #task 17
 
 products = {"socks" : 100, "pen": 20 , "pencil": 30}
 cart = []
-input
+def new_product():
+ product = input("Enter product name: ")
+ 
+ if product in products:
+  cart.append(product)
+  return product
+ else:
+  return "not available"
+ 
+
+result = new_product()
+
+print(cart,result)
