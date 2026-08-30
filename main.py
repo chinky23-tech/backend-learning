@@ -1,8 +1,3 @@
 
-
-products = ["camera", "phone", "tablet", "keyboard"]
-
-if products in products:
-    print("product is available")
-else:
-    print("product is not available")      
+name = input("enter your age")
+print("hello"  + name)

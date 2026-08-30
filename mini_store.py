@@ -14,6 +14,7 @@
 #show_products(product)
 
 #Task 1
+"""
 products = {"laptop" : "50000" , "phone": "30000" , "tablet": "20000" , "keyboard": "2000"}
 def show_products(products):
 
@@ -32,7 +33,7 @@ def get_price(products, products_name):
    
 
 #Task 3
-"""
+
 def calculate_total(price1, price2, price3):
     return price1 + price2 + price3 
 
@@ -48,7 +49,7 @@ def buy_product(products, products_name):
         print("product is not available")    
 
     buy_product(products)   
-"""
+
 
 # task 5
 
@@ -134,26 +135,61 @@ def calculate_sum(numbers):
     return(total)
     print(numbers)
 
-    #task13
-products = {"laptop" : 50000 , "phone" : 30000 , "tablet" : 20000 , "keyboard" : 2000}
-
-    
-def add_products(products):
-
-  list = []
-   
-for product_name, price in products.items():
-   
-    if price >= 10000:
-       
-      list.append(product_name)
 
      
 
 
 result = list(products)
 print(result)
+"""
+#task 13
 
+"""
+age = int(input("enter your age : "))
+age = age+10
+print("in 10 years you will be" ,    age)
+"""
     
 
 
+#task 14
+"""
+def calculate_future_age(age):
+     return age + 10
+age = int(input("enter your age :")) 
+
+
+result = calculate_future_age(age)
+print("your age will be" , result , "after ten years")
+"""
+
+#task  15
+"""
+products = ["top"]
+def product_availabe():
+ product =    input("enter product name")
+ 
+ if product in products:
+      return "product available"
+ else:
+    return "product not available"
+result = product_availabe()
+print(result)
+"""
+     
+    #task 16
+products = {"top": 1000, "jeans": 2000, "dress": 3000} 
+
+def check_product():
+   product = input("enter product name :")
+   if product in products:
+     return products[product]
+   else:
+     return "not available"   
+result = check_product()
+print(result)
+    #task 17
+
+products = {"socks" : 100, "pen": 20 , "pencil": 30}
+cart = []
+input
