@@ -10,6 +10,7 @@ while count < 3:
    count = count + 1
 """
 #task 2
+"""
 def ask_name(name):
     
     print("hello" + name)
@@ -20,3 +21,18 @@ while True:
        break
    else:
        ask_name(name)
+       """
+#task 3
+
+def greet(name):
+    print("hello" + " " + name)
+while True:
+    name = input("Enter name:")
+    if  name == "quit":
+        break
+    if name == "admin":
+        continue
+    else:
+        greet(name)
+
+    
