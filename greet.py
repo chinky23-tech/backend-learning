@@ -66,13 +66,16 @@ def calculate_total(cart):
 
  total = 0 
      
- for product_name , quantity, price in cart:
+ for  product_name ,quantity, price in cart:
     
     total += quantity * price 
  return total
 total = calculate_total(cart)
 
-
-
+def print_bill(cart):
+    for product_name , quantity , price in cart:
+        print(f"{product_name} : {quantity} x {price} = {quantity * price}")
+print_bill(cart)
+print(f"Total is: {total}")
 
                 
