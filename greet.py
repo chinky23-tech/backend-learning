@@ -46,10 +46,17 @@ def check_product():
             if product == "quit":
                 
                 break   
+            
             if product not in products:
-                
-                continue 
+              
+            
+              continue 
+            
             quantity = int(input("Enter quantity: "))
+            if quantity <= 0:
+                print("quantity must be greater than 0")
+                print("please enter a valid quantity")
+                continue
             cart.append([product, quantity, products[product]])
 check_product()
 total = 0
