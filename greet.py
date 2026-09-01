@@ -48,7 +48,7 @@ def check_product():
                 break   
             
             if product not in products:
-              
+              print("product not available")
             
               continue 
             
@@ -59,11 +59,20 @@ def check_product():
                 continue
             cart.append([product, quantity, products[product]])
 check_product()
-total = 0
-for product_name , quantity, price in cart:
-    print(product_name, quantity, price)  
-    total += quantity * price 
 
-print("total is ", total)
+
+
+def calculate_total(cart):
+
+ total = 0 
+     
+ for product_name , quantity, price in cart:
+    
+    total += quantity * price 
+ return total
+total = calculate_total(cart)
+
+
+
 
                 
