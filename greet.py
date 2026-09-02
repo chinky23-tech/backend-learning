@@ -78,4 +78,15 @@ def print_bill(cart):
 print_bill(cart)
 print(f"Total is: {total}")
 
-                
+
+def checkout(total):
+    while True:
+        choice = input("Do you want to checkout?")
+        if choice == "yes":
+             return "Order placed successufully"
+             
+        if choice == "no":
+            return "Order cancelled"
+            
+result = checkout(total)
+print(result)
