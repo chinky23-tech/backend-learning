@@ -27,9 +27,12 @@ users = {
 
     }
 }
-for user_id , user_data in users.items():
-     print(user_data["name"])
+user_skill_input  = input("Enter your skill:")
 
-for user_skill in user_data["skill"]:
-     print(user_skill)
-      
+for user_id , user_data in users.items():
+     for user_skill in user_data["skill"]:
+      if user_skill == user_skill_input:
+       print(f"{user_data["name"]} knows {user_skill_input}")
+    
+    
+    
