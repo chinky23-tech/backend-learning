@@ -1,12 +1,34 @@
-def login_required(func):
-    @login_required
-    def view_profile():
-     print("showing profile")
-def wrapper():  
-   logged_in = True
+users = {}
 
-   if logged_in:
-       func()
-   else:
-      print("please login first")      
-      return wrapper
+def register():
+    username = input("Username: ")
+    password = input("Password: ")
+   
+    
+    users[username] = password 
+
+
+
+
+
+def login():
+    username = input("Enter Username: ")
+    password = input("Enter Password: ")
+
+
+    if username in users:
+        if  users[username] == password:
+            print( f"Welcome {username}")
+        else:
+            print("Invalid username")
+    else:
+      print("Invalid password")  
+
+register()      
+login()
+
+
+current user = None
+
+def profile():
+    print("This is your private profile")
