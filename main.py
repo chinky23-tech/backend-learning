@@ -26,19 +26,33 @@ def login():
     password = input("Enter Password: ")
 
 
+
     if username in users:
         if  users[username] == password:
+            current_user = username
             print( f"Welcome {username}")
+   
         else:
-            print("Invalid username")
+            print("Invalid password")
     else:
-      print("Invalid password")  
+      print("Invalid username")  
 
+
+def logout():
+   global current_user
+   if current_user !=  None:
+    current_user = None
+    print("logout successfully")  
+   else:
+          print("already logout") 
 register()      
+
 login()
 
 @login_required
 
 def profile():
     print("This is your private profile")
+profile()
+logout()
 profile()
