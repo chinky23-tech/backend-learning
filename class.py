@@ -13,7 +13,7 @@ class Product:
     
 
 laptop = Product("Laptop", 5000,5) 
-phone = Product("Phone", 30000, 5)
+phone = Product("Phone", 30000, 2)
 keyboard = Product("Keyboard" ,2000, 10 )
 
 
