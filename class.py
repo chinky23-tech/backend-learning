@@ -26,7 +26,8 @@ keyboard = Product("Keyboard" ,2000, 10 )
 
 phone.update_price(32000)
 print(phone.price)
-
+phone.update_price(-5000)
+print(phone.price)
 print(laptop.total_value()) 
 print(phone.total_value())
 print(keyboard.total_value())
